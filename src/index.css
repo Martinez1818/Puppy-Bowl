@@ -1,0 +1,315 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;600&family=Raleway:wght@700&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Body Styling */
+body {
+  font-family: 'Nunito', sans-serif;
+  color: #333333;
+  line-height: 1.6;
+  padding: 0px;
+  min-height: 100vh;
+}
+
+/* Navbar Styling */
+nav {
+  color: rgb(255, 255, 255);
+  font-family: 'Nunito', sans-serif;
+  font-weight: 900;
+  align-items: center;
+  padding: 1rem 2rem;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+nav a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+  margin: 0 1rem;
+  transition: color 0.3s ease;
+}
+
+nav a:hover {
+  color: #ffcc00;
+}
+
+/* Page Title */
+h1 {
+  text-align: center;
+  margin: 2rem auto 1rem;
+  
+}
+
+/* Search Bar */
+.search-container {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 2rem;
+}
+
+input[type="text"] {
+  padding: 0.8rem;
+  width: 90%;
+  max-width: 500px;
+  border: 2px solid #e0dbdb6d;
+  border-radius: 10px;
+  font-size: 1rem;
+  outline: none;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+input[type="text"]:focus {
+  border-color: #37BEA1;
+  box-shadow: 0 0 8px rgba(106, 159, 181, 0.5);
+}
+
+
+.all-players-container {
+  padding: 20px;
+  text-align: center;
+  background-color: #444444;
+  font-family: Arial, sans-serif;
+}
+
+
+.title {
+  font-family: 'Nunito', sans-serif;
+  font-size: 60px;
+  color: #ffffff;
+  margin-bottom: 20px;
+  font-weight: bold;
+
+}
+
+
+.search-input {
+  padding: 10px;
+  width: 100%;
+  max-width: 400px;
+  margin: 20px auto;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 1rem;
+  outline: none;
+  display: block;
+}
+
+.players-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+  margin-top: 20px;
+}
+
+
+.player-card {
+  background: white;
+  border-radius: 10px;
+  padding: 15px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.player-card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+
+.player-image {
+  width: 100%;
+  height: auto;
+  max-height: 200px;
+  object-fit: cover;
+  border-radius: 8px;
+  margin-bottom: 10px;
+}
+
+
+.player-name {
+  font-size: 1.2rem;
+  color: #4a4e69;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+
+.player-breed {
+  color: #6d6875;
+  font-size: 0.9rem;
+  margin-bottom: 15px;
+}
+
+.details-button {
+  padding: 10px 20px;
+  background-color: #A2E2D4;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-size: 0.9rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.details-button:hover {
+  background-color: #37BEA1;
+  color: #333;
+}
+/* Navbar Styling */
+.navbar {
+  background-color: #A2E2D4; 
+  padding: 1rem 2rem;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.nav-link {
+  color: #ffffff;
+  text-decoration: none;
+  font-size: 25px;
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+
+.nav-link:hover {
+  color: #37BEA1; 
+}
+/* Single Player Container */
+.single-player-container {
+  background-color: #444444;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: calc(100vh - 60px); 
+  padding: 20px;
+}
+
+/* Single Player Card */
+.single-player-card {
+  background: white;
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  max-width: 300px; 
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.single-player-card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+/* Player Image */
+.single-player-card .player-image {
+  width: 100%;
+  height: auto;
+  max-height: 200px;
+  object-fit: cover;
+  border-radius: 8px;
+  margin-bottom: 10px;
+}
+
+/* Player Name */
+.single-player-card .player-name {
+  font-family: 'Nunito', sans-serif;
+  font-size: 1.5rem;
+  color: #444444;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+/* Player Breed */
+.single-player-card .player-breed {
+  font-family: 'Nunito', sans-serif;
+  color: #444444;
+  font-size: 1rem;
+}
+/* Delete Button */
+.delete-button {
+  padding: 10px 20px;
+  background-color: #e63946; 
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-size: 0.9rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  margin-top: 15px;
+}
+
+.delete-button:hover {
+  background-color: #ff7675; 
+  color: #333;
+}
+/* Background styling for New Player Form */
+.new-player-form-container {
+  background-color: #444444; 
+  padding: 20px;
+  min-height: 100vh; 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* New Player Form */
+.new-player-form {
+  max-width: 400px;
+  background-color: #ffffff;
+  padding: 2rem;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+/* Input Fields */
+.input-field {
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 1rem;
+  outline: none;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.input-field:focus {
+  border-color: #37BEA1;
+  box-shadow: 0 0 5px #37BEA1; 
+}
+
+/* Submit Button */
+.submit-button {
+  width: 100%;
+  padding: 10px;
+  background-color: #9BDFD0; 
+  color: #ffffff;
+  border: none;
+  border-radius: 5px;
+  font-size: 1rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  margin-top: 10px;
+}
+
+.submit-button:hover {
+  background-color:#37BEA1; 
+  color: #333;
+}
